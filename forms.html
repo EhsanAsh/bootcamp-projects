@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="EhsanAsh">
+    <meta name="description" content="Html Forms">
+    <meta name="keywords" content="Html, Forms, Html Forms, Forms in Html">
+    <title>Html Forms</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <header>
+
+            <nav>
+
+                <ol type="1" start="5" reversed="">
+                    <li>About Us</li>
+                </ol>
+
+            </nav>
+
+        </header>
+
+        <h1>Forms Demo</h1>
+        <form action="/forms" method="get">
+            <div>
+                <label for="username">Enter a Username</label>
+                <input type="text" placeholder="Username" id="username" name="username" />
+            </div><br />
+            <div>
+                <label for="password">Enter a Password</label>
+                <input type="password" placeholder="Password" id="password" name="password" />
+            </div><br />
+            <div>
+                <input type="number" placeholder="Enter a number" name="num" min="0" max="1000" step="3" />
+            </div>
+            <p>
+                <input type="color" name="color" />
+            </p>
+            <div>
+                <label for="submit">Submit</label>
+                <input type="submit" value="Click Me!" name="submit" id="submit" />
+            </div><br />
+            <button>Submit</button><br /><br />
+            <button type="button">Won't Submit</button>
+
+        </form>
+        <hr />
+
+        <h2>Playing with Search Engines</h2>
+
+        <h3>Search Reddit &#8493</h3>
+        <form action="https://www.reddit.com/search">
+            <label for="reddit">Search Reddit</label>
+            <input type="text" placeholder="search reddit" name="q" id="reddit" />
+        </form>
+
+        <h3>Search Google &#8493</h3>
+        <form action="https://www.google.ca/search">
+            <input type="text" name="q" />
+            <button>Search Google</button>
+        </form>
+
+        <h3>Search Youtube &#8493</h3>
+        <form action="https://www.youtube.com/results">
+            <input type="text" name="search_query" />
+            <button>Search Youtube</button>
+        </form>
+
+        <h2>More Inputs! &#8493</h2>
+        <form action="/Ehsanash">
+            <input type="checkbox" name="agree_tos" id="agree" />
+            <lable for="agree">I agree to the terms and conditions</lable>
+            <p>
+                <lable for="Xs">Xs</lable>
+                <input type="radio" name="size" id="Xs" value="Xs" />
+            </p>
+            <p>
+                <label for="S">S</label>
+                <input type="radio" name="size" id="S" value="S" />
+            </p>
+            <p>
+                <label for="M">M</label>
+                <input type="radio" name="size" id="M" value="M" />
+            </p>
+
+            <p>
+                <lable for="meal">Please select an Entree</lable>
+                <select name="meal" id="meal">
+                    <option value="">-Please choose an option-</option>
+                    <option value="Chicken">Chicken</option>
+                    <option value="beef">Beef</option>
+                    <option value="fish">Fish</option>
+                </select>
+            </p>
+            <p>
+                <lable for="cheese">Please choose amount of cheese</lable>
+                <input type="range" name="cheese_level" id="cheese" min="1" max="10" step="2" value="5" />
+            </p>
+            <p>
+                <label for="request">Any special Requests?</label>
+                <hr />
+                <textarea name="request?" id="request" placeholder="Enter your request here" rows="10"
+                    cols="40"></textarea>
+            </p>
+            <button>Submit</button>
+        </form>
+
+        <h2>Validation Demo</h2>
+        <form action="/forms2">
+            <lable for="first">Enter Firsname</lable>
+            <input type="text" name="first" id="first" required />
+            <p>
+                <lable for="username">Enter Username</lable>
+                <input type="username" name="username" id="username" placeholder="Username" minlength="5" maxlength="12"
+                    required />
+            </p>
+            <p>
+                <label for="email">Enter Email</label>
+                <input type="email" name="email" id="email" placeholder="Email" required />
+            </p>
+            <p>
+                <input type="url" name="url" id="url" placeholder="Enter a url" required />
+            </p>
+            <button>Submit</button>
+        </form>
+
+        <footer>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>

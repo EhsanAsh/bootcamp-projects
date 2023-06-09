@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="author" content="EhsanAsh">
+    <meta name="description" content="Html Forms">
+    <meta name="keywords" content="Html, Forms, Html Forms, Forms in Html">
+    <title>Html Marathon Form</title>
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <nav>
+                <button type="button" onclick="window.location.href='/index.html'">Home</button>
+                <button type="button" onclick="window.location.href='/about_us.html'">About Us</button>
+            </nav>
+        </header>
+
+        <h1>Race Registration!</h1>
+
+        <form action="/Ehsan">
+            <div>
+                <label for="first">First Name</label>
+                <input type="text" name="first_name" id="first" placeholder="First Name" required="yes" minlength="3"
+                    maxlength="15" />
+                <label for="last">Last Name</label>
+                <input type="text" name="last_name" id="last" placeholder="Last Name" required="yes" minlength="3"
+                    maxlength="22" />
+            </div><br />
+
+            <h2>Select a race:</h2>
+            <div>
+                <input type="radio" name="race" id="fun" required value="fun_run" />
+                <label for="fun">Fun Run 5K</label><br />
+                <input type="radio" name="race" id="half" required value="half_marathon" />
+                <label for="half">Half Marathon</label><br />
+                <input type="radio" name="race" id="full" required value="full_marathon" />
+                <label for="full">Full Marathon</label><br />
+            </div><br />
+            <p>
+                <lable for="email">Email:</lable>
+                <input type="email" name="email" id="email" placeholder="Email" required="yes" />
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password" required="yes" />
+            </p>
+            <div>
+                <label for="age">Select Age Group:</label>
+                <select name="age_group" id="age">
+                    <option value="">--Please choose an option--</option>
+                    <option value="ya">18-30</option>
+                    <option value="middle">31-40</option>
+                    <option value="mature">41-50</option>
+                    <option value="grn">51+</option>
+                </select>
+            </div>
+            <hr />
+            <button>Register</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
